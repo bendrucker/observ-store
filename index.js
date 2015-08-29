@@ -17,7 +17,7 @@ function ObservStore (initial, constructor) {
   })
 }
 
-ObservStore.update = function (store, array) {
+ObservStore.update = function update (store, array) {
   assertObserv(store)
   updateHash(store.data, array)
   store.ids.set(ids(array))
