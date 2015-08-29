@@ -1,0 +1,38 @@
+{
+  "name": "observ-store",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Observable data store for ordered application data",
+  "license": "MIT",
+  "repository": "bendrucker/observ-store",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "observ",
+    "observable",
+    "store",
+    "app",
+    "data",
+    "state"
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "assert-observ": "~1.0.0",
+    "observ-array": "~3.2.1",
+    "observ-struct": "~6.0.0",
+    "observ-varhash": "~1.0.6",
+    "value-pipe": "~1.0.0"
+  }
+}
