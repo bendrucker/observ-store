@@ -45,6 +45,30 @@ Default: `Observ`
 
 A function to use to construct new values added to `data`. Defaults to [`Observ`](https://github.com/raynos/observ), but you could use an [`ObservStruct`](https://github.com/raynos/observ-struct).
 
+#### Array Methods
+
+The store constructor exposes the following array convenience methods:
+
+* `map`
+* `filter`
+* `reduce`
+* `forEach`
+* `every`
+* `some`
+
+You can pay in an observable store or a copy (e.g. `store` or `store()`).
+
+```js
+var store = Store()
+Store.update([{id: 1}, {id: 2}])
+Store.map(store, function (item, index) {
+  return String(index) + String(item.id)
+})
+//=> ['01', '12']
+```
+
+These methods have the same signatures as the native methods. The first argument is always a store, followed by a callback and any other arguments the method accepts on a normal `[]` array.
+
 ## License
 
 MIT © [Ben Drucker](http://bendrucker.me)

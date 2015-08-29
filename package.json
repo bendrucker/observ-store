@@ -26,13 +26,16 @@
     "standard": "^4.0.0"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "array.js"
   ],
   "dependencies": {
     "assert-observ": "~1.0.0",
     "observ-array": "~3.2.1",
     "observ-struct": "~6.0.0",
     "observ-varhash": "~1.0.6",
-    "value-pipe": "~1.0.0"
+    "to-array": "~0.1.4",
+    "value-pipe": "~1.0.0",
+    "xtend": "~4.0.0"
   }
 }

@@ -5,6 +5,8 @@ var Hash = require('observ-varhash')
 var Observ = require('observ')
 var ObservArray = require('observ-array')
 var assertObserv = require('assert-observ')
+var assign = require('xtend/mutable')
+var arrayMethods = require('./array')
 
 module.exports = ObservStore
 
@@ -16,6 +18,8 @@ function ObservStore (initial, constructor) {
     ids: ObservArray(initial.ids || [])
   })
 }
+
+assign(ObservStore, arrayMethods)
 
 ObservStore.update = function update (store, array) {
   assertObserv(store)
