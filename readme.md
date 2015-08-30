@@ -56,7 +56,7 @@ The store constructor exposes the following array convenience methods:
 * `every`
 * `some`
 
-You can pay in an observable store or a copy (e.g. `store` or `store()`).
+You can pass in an observable store or a copy (e.g. `store` or `store()`).
 
 ```js
 var store = Store()
