@@ -1,6 +1,7 @@
 'use strict'
 
 var toArray = require('to-array')
+var value = require('observ-value')
 var methods = ['map', 'forEach', 'filter', 'reduce', 'every', 'some']
 
 module.exports = methods.reduce(function (api, method) {
@@ -14,7 +15,7 @@ module.exports = methods.reduce(function (api, method) {
 }, {})
 
 function asArray (store) {
-  store = typeof store === 'function' ? store() : store
+  store = value(store)
 
   return store.ids.map(function (id) {
     return store.data[id]
