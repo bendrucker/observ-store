@@ -1,4 +1,4 @@
-# observ-store [![Build Status](https://travis-ci.org/bendrucker/observ-store.svg?branch=master)](https://travis-ci.org/bendrucker/observ-store)
+# observ-store [![Build Status](https://travis-ci.org/bendrucker/observ-store.svg?branch=master)](https://travis-ci.org/bendrucker/observ-store) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/observ-store.svg)](https://greenkeeper.io/)
 
 > Observable data store for ordered application data
 
